@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> portfolio_2022_10 </title>
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\reset.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\slick-theme.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\slick.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\about.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="C:\Users\toran\portfolio_2022_10\js\slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__inner">
+                <h1 class="header__title header-title">
+                    <a href="C:\Users\toran\portfolio_2022_10\index.html">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\portfolio_logo.png" alt="ロゴ">
+                    </a>
+                </h1>
+
+        <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\hobby.html">Hobby</a></li>
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\about.html">About</a></li>
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\work.html">Work</a></li>
+                <li class="nav-items__item"><a href="https://www.instagram.com/"><img src="C:\Users\toran\portfolio_2022_10\img\Instagram.png" alt="inst"></a></li>
+            </ul>
+        </nav>
+
+        <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <section class="hobby">
+                <div class="recently-film">
+                    <ul class="slide-items">
+                        <picture>
+                            <li class="img1">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\sp1.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 67.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 85.png" alt="">
+                            </li>
+                        </picture>
+                        <picture>
+                            <li class="img2">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 66.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 81.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 81.png" alt=""></li>
+                        </picture>
+                        <picture>
+                            <li class="img3">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 65.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 80.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 80.png" alt=""></li>
+                        </picture>
+                    </ul>
+                </div>
+                <div class="film-hobby">
+                    <section class="section-headline lineAnimation">
+                        <h2 class="headline">About</h2>
+                        <div class="About_line">
+                            <p>
+                                東京にてweb制作/学習をしております。
+                                <br>
+                                大学4年生から趣味でフィルムカメラでの写真撮影/写真動画の編集を学習を始める。
+                                <br>
+                                2021年4月新卒採用にて、1年4か月間東京都のシステム開発会社でHP作成業務、
+                                <br>
+                                運用保守、アクセス解析などの業務を行う。
+                            </p>
+                            <p>
+                                <picture class="picture_item-pic">
+                                    <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_About1.png">
+                                    <source media="(min-width: 900px)" class="picture_item" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_About1.png">
+                                    <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_About_1.png" alt="">
+                                </picture>
+                            </p>
+                            <div>
+                                <dl class="gaiyou">
+                                    <div class="dl_1">
+                                        <dt class="dt_1">所在</dt>
+                                        <dd class="dd_1">東京都内</dd>
+                                    </div>
+                                    <div class="dl_2">
+                                        <dt class="dt_2">業務内容</dt>
+                                        <dd class="dd_2">web制作/HTML/CSSコーディング/
+                                            <br>CMS(Wordpress)/問い合わせ対応</dd>
+                                    </div>
+                                    <div class="dl_3">
+                                        <dt class="dt_3">お問い合わせ</dt>
+                                        <dd class="dd_3">k.tora1013@icloud.com</dd>
+                                    </div>
+                                    <div class="dl_4">
+                                        <dt class="dt_4">趣味</dt>
+                                        <dd class="dd_4">フィルムカメラで写真撮影、読書、映画鑑賞など</dd>
+                                    </div>
+                                    <div class="dl_5">
+                                        <dt class="dt_5">近藤 虎之介</dt>
+                                        <dd class="dd_5">Kondo Toranosuke</dd>
+                                    </div>
+                                    <div class="dl_6">
+                                        <dt class="dt_6">instagram</dt>
+                                        <dd class="dd_6">dailys.sora</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--<div class="section_1">
+                    <div class="imgBox inview fadeIn">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\FL000030.jpg" alt="">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\FL000029.jpg" alt="">
+                    </div>
+                </div>-->
+                <h2 class="work">Work</h2>
+                    <div class="work_line">
+                        <p>2021年4月新卒採用にて、1年4か月間東京都のシステム開発会社でHP作成業務、運用保守、アクセス解析などの業務を行う。 web制作、HTML/CSSコーディング、CMS(Wordpress)、問い合わせ対応</p>
+                    <!--<h3 class="skill">Skill</h3>
+                    <div class="skill_line">
+                        <div>
+                            <p>コーディング</p>
+                            <p>HTML,CSS,JavaScript,jQueryを現在も独学で<br>コーディングの学習に加えて、<br>AdobeXDの学習をしております。<br>
+                            また、学生時代からの趣味である写真、動画に関するツールAdobePremiumPro、illustrator、Photoshop、AfterEffectsの学習をしています。<br>
+                            社会人としてWebエンジニアデザイナーとしての<br>
+                            経験は短く至らぬ点もありますが、これまでの自走の経験を活かし早期貢献ができると考えております。</p>
+                        </div>
+                    </div>-->
+            </section>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer-div">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\about.html">About</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\work.html">Work</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\hobby.html">Hobby</a>
+                        </li>
+                        <p class="footer-copy"><small class="last">&copy; 2022 portfolio</small></p>
+                    </ul>
+                </nav>
+                <p class="p-top-page">
+                    <a href="C:\Users\toran\portfolio_2022_10\index.html">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_page-top.png">
+                            <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_page-top.png">
+                            <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_page-top.png" alt="">
+                        </picture>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="C:\Users\toran\portfolio_2022_10\js\main.js"></script>
+</body>
+
+</html>
