@@ -1,0 +1,2779 @@
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+.a :hover{
+  color: #ff7043;
+}
+
+/*@media screen and (min-width: 900px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+    height: 5080px;
+  }
+}*/
+@media screen and (min-width: 520px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+  main {
+    width: 100%;
+    height: 5080px;
+    display: flex;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .hobby{
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 520px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .hobby{
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+/*overflow: hidden;*/
+ul,
+li {
+  list-style: none;
+}
+body {
+  display: flex;
+flex-flow: column;
+min-height: 100vh;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+}
+.main {
+  margin: auto;
+  overflow: hidden;
+}
+.container{
+  min-height: 100vh;
+}
+@media screen and (min-width: 520px) {
+  .container{
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container{
+    min-height: 100vh;
+  }
+}
+  /* ヘッダー */
+  .header {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .header__inner {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    position: relative;
+  }
+  
+  
+  /* ヘッダーのロゴ部分 */
+  .header__title {
+    width: 80px;
+  }
+  
+  
+  @media screen and (min-width: 900px) {
+    .header__title {
+      width: 120px;
+    }
+  }
+  
+  .header__title img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ヘッダーのナビ部分 */
+  
+  .header__nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: ease .4s;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .header__nav {
+      position: static;
+      transform: initial;
+      background-color: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: end;
+      width: 50%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 900px) {
+    .nav__items {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: initial;
+      justify-content: space-between;
+    }
+  }
+  
+  .nav-items {
+    padding-top: 250px;
+    padding-bottom: 200px;
+  }
+  
+  
+  @media screen and (min-width: 900px) {
+    .nav-items {
+      padding-top: inherit;
+      padding-bottom: inherit;
+
+    }
+  }
+  
+  /* ナビのリンク */
+  .nav-items__item a {
+    color: black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .nav-items__item:last-child a {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .nav-items__item a {
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  /* ハンバーガーメニュー */
+  
+  .header__hamburger {
+    width: 48px;
+    height: 100%;
+  
+  }
+  
+  .hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* ハンバーガーメニューの線 */
+  .hamburger span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 0;
+  }
+  
+  
+  /* ハンバーガーメニュークリック後のスタイル */
+  .header__nav.active {
+    transform: translateX(0);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+  /*Hobby全体の幅 .hobby .film-hobby .section-headline*/
+  @media screen and (min-width: 520px) {
+    .hobby {
+      width: 100vw;
+      min-height: 100vh;
+    }
+    .film-hobby {
+      width: 100vw;
+      height: auto;
+    }
+    .section-headline{
+      width: 100vw;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    .hobby {
+      width: 100vw;
+      height: auto;
+    }
+    .film-hobby {
+      width: 100vw;
+      height: auto;
+    }
+    .section-headline{
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  /*スライドの画像*/
+  .recently-film {
+    width: 100vw;
+    object-position: 0 0;
+  }
+  /*スライドの画像*/
+  @media screen and (min-width: 960px){
+    .recently-film {
+      width: 100vw;
+    }
+  }
+  /*スライドの画像*/
+  .slide-items {
+    padding-top: 46px;
+    width: 100%;
+  }
+  /*スライドの画像*/
+  .slick-arrow {
+    z-index: 100;
+  }
+  /*スライドの画像*/
+  .slick-dots {
+    padding: -100px 0;
+  }
+  /*スライドの画像*/
+  .slick-arrow::before {
+    color: #000;
+  }
+  /*スライドの画像*/
+  .slick-next {
+    right: 10px;
+  }
+  /*スライドの画像*/
+  .slick-prev {
+    left: 10px;
+  }
+  /*スライドの画像*/
+  .img1 {
+    width: 45%;
+    height: 65.5vh;
+    object-position: 0 0;
+    object-fit: contain;
+  }
+  /*スライドの画像*/
+  @media screen and (min-width: 960px){
+    .img1 {
+      width: 100%;
+      height: 65.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 520px){
+    .img1 {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  /*スライドの画像*/
+  .img2 {
+    width: 45%;
+    height: 65.5vh;
+    object-fit: contain;
+    object-position: 100% 100%;
+  }
+  /*スライドの画像*/
+  @media screen and (min-width: 960px){
+    .img2 {
+      width: 1080px;
+      height: 65.5vh;
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 520px){
+    .img2 {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  /*スライドの画像*/
+  .img3 {
+    width: 45%;
+    height: 65.5vh;
+    object-fit: contain;
+  }
+  /*スライドの画像*/
+  @media screen and (min-width: 960px){
+    .img3 {
+      width: 1080px;
+      height: 65.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 520px){
+    .img3 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+/*Pickupに下線引くアニメ*/
+h2 {
+  width: 100vw;
+  text-decoration: underline;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  height: auto;
+  text-align: center;
+  font-size: 64px;
+  font: small-caps bold 16px/2 cursive;
+}
+@media screen and (min-width: 520px){
+  h2 {
+    width: 100vw;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    height: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  h2 {
+    width: 100vw;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    font-size: 64px;
+  }
+}
+/*Aboutのフォント設定等*/
+.About_line {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .About_line {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-family: serif;
+    word-break: normal;
+    overflow-wrap:  break-word;
+  }
+}
+@media screen and (min-width: 900px){
+  .About_line {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    font-size: 32px;
+    font-family: serif;
+  }
+}
+/*Aboutのプロフィール写真のサイズ位置*/
+.picture_item-pic {
+  width: 100vw;
+}
+@media screen and (min-width: 960px){
+  .picture_item-pic {
+    width: 100vw;
+    padding-right: 500px;
+  }
+}
+@media screen and (min-width: 520px){
+  .picture_item-pic {
+    width: 100vw;
+  }
+}
+.picture_item {
+  width: 100vw;
+}
+@media screen and (min-width: 960px){
+  .picture_item img {
+    top: 1295px;
+    padding-left: 500px;
+  }
+}
+@media screen and (min-width: 520px){
+  .picture_item {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+    
+    font-size: 28px;
+    font-family: serif;
+  }
+}
+/*Aboutのプロフィール文言の位置*/
+@media screen and (min-width: 520px){
+  .gaiyou {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 960px){
+  .gaiyou {
+    width: 100vw;
+    height: auto;
+  }
+}
+/*dl1文言*/
+.dl_1{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_1 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_1 {
+    width: 100vw;
+    height: -25vh;
+    position: relative;
+    top: -236px;
+    left: -77px;
+    text-indent: -0.5em;
+    font-size: 28px;
+  }
+}
+/*dl2文言*/
+.dl_2 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_2 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_2 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -236px;
+    left: -75px;
+    padding-left: 0.75em;
+    text-indent: -0.5em;
+    font-size: 28px;
+  }
+}
+/*dl3文言*/
+.dl_3 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_3 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    top: 75px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_3 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -270px;
+    left: -75px;
+    padding-left: 1.7em;
+    text-indent: -0.5em;
+    font-size: 28px;
+  }
+}
+/*dl4文言*/
+.dl_4 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_4 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    top: 110px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_4 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -320px;
+    left: -75px;
+    font-size: 28px;
+  }
+}
+/*dl5文言*/
+.dl_5 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_5 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    top: 180px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_5 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -350px;
+    left: -77px;
+    padding-left: 1em;
+    text-indent: -0.5em;
+    font-size: 28px;
+  }
+}
+/*dl6文言*/
+.dl_6 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 520px){
+  .dl_6 {
+    width: 65.5vw;
+    height: 30px;
+    position: relative;
+    font-size: 28px;
+    top: 220px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dl_6 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -390px;
+    left: -75px;
+    padding-left: 0.5em;
+    font-size: 28px;
+  }
+}
+/*dt1~文言*/
+.dt_1{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_1 {
+    width: 100vw;
+    height: 30px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_1 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+
+.dt_2{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_2 {
+    width: 100vw;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_2 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+.dt_3{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_3 {
+    width: 100vw;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_3 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+.dt_4{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_4 {
+    width: 100vw;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_4 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+.dt_5{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_5 {
+    width: 100vw;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_5 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+.dt_6{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 520px){
+  .dt_6 {
+    width: 100vw;
+    height: 30px;
+    position: relative;
+    top: 35px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 960px){
+  .dt_6 {
+    width: 100vw;
+    height: auto;
+    font-size: 28px;
+  }
+}
+/*dd1~文言*/
+.dd_1 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_1 {
+    width: 100vw;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_1 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 35vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.dd_2 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_2 {
+    width: 100vw;
+    font-size: 28px;
+    padding-top: 45px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_2 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 35vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.dd_3 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_3 {
+    width: 100vw;
+    font-size: 28px;
+    padding-top: 45px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_3 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 35vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.dd_4 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_4 {
+    width: 100vw;
+    font-size: 28px;
+    padding-top: 45px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_4 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 45vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.dd_5 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_5 {
+    width: 100vw;
+    font-size: 28px;
+    padding-top: 45px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_5 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 30vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.dd_6 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 2.5px;
+}
+@media screen and (min-width: 520px){
+  .dd_6 {
+    width: 100vw;
+    font-size: 28px;
+    padding-top: 45px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .dd_6 {
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 30vw;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+/*カステラたち*/
+.imgBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap:wrap;
+}
+@media screen and (min-width: 960px){
+  .imgBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    object-fit: contain;
+    padding-left: 350px;
+    padding-right: -380px;
+  }
+}
+/* 画像がふわっとでてくるやつ*/
+.section_1 {
+  width: 45%;
+    height: 65.5vh;
+    object-position: 0 0;
+    object-fit: contain;
+}
+/*Workのフォント設定等*/
+.Work {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .work {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    position: relative;
+    bottom: -35vh;
+    font-size: 28px;
+    font-family: serif;
+    word-break: normal;
+    overflow-wrap:  break-word;
+  }
+}
+@media screen and (min-width: 960px){
+  .work {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -25vh;
+    margin: 0;
+    font-size: 32px;
+    font-family: serif;
+  }
+}
+
+/*work_lineの設定*/
+.work_line {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .work_line {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 35vh;
+    margin: 0;
+    font-size: 28px;
+    font-family: serif;
+    word-break: normal;
+    overflow-wrap:  break-word;
+  }
+}
+@media screen and (min-width: 960px){
+  .work_line {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -25vh;
+    margin: 0;
+    font-size: 28px;
+    font-family: serif;
+  }
+}
+/*Skillのフォント設定等*/
+.skill {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .skill {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    position: relative;
+    bottom: -15vh;
+  padding-top: 1.5rem;
+    font-size: 28px;
+    font-family: serif;
+    word-break: normal;
+    overflow-wrap:  break-word;
+  }
+}
+@media screen and (min-width: 960px){
+  .skill {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -28vh;
+    margin: 0;
+    font-size: 48px;
+    font-family: serif;
+  }
+}
+/*Skill_lineの設定*/
+.skill_line {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: 2.5vh;
+  text-align: center;
+  font-size: 15.5px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .skill_line {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 35vh;
+    margin: 0;
+    font-size: 28px;
+    font-family: serif;
+    word-break: normal;
+    overflow-wrap:  break-word;
+  }
+}
+@media screen and (min-width: 900px){
+  .skill_line {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: -30vh;
+    margin: 0;
+    font-size: 34px;
+    font-family: serif;
+  }
+}
+
+/* Hobby枠*/
+.film-hobby {
+  display: flex;
+  margin: 30px 0px 0px 0px;
+  vertical-align: 125px;
+  width: 100%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+/*H3たぐについて*/
+h3 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: 25px;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 25px;
+  font: small-caps bold 16px/2 cursive;;
+}
+@media screen and (min-width: 520px){
+  h3 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 300px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 960px){
+  h3 {
+    width: 100vw;
+    text-decoration: underline;
+    display: flex;
+    position: relative;
+    top: -30vh;
+    justify-content: center;
+    height: auto;
+    font-size: 64px;
+  }
+}
+/*gridたぐについて
+@media screen and (min-width: 520px){
+  .grid {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+}*/
+@media screen and (min-width: 960px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    grid-template-rows: 300px 300px;
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+}
+/* いんすた枠 2022冬縦書き*/
+.writing-mode-1 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-2 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-3 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-4 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-5 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-6 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-7 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-8 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode-9 {
+  writing-mode: vertical-rl;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  right: 2.5vw;
+  top: 45px;
+  font-size: 34px;
+  font-family: serif;
+  font-weight: bold;
+}
+@media screen and (min-width: 520px){
+  .writing-mode-1  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: 34vh;    
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-2  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: 6vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-3  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -24vh;
+    right: 55vw;
+    padding-right: 50px;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-4  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -54vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-5  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -83.5vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-6  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -113.5vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-7  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -143.5vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-8  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -173.5vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-9  {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: -203.5vh;
+    right: 55vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 940px){
+  .writing-mode-1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 34vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-2 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 6vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -24vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-4 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -54vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -83.5vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-6 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -113.5vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-7 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -143.5vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-8 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -173.5vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-9 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -203.5vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 960px){
+  .writing-mode-1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-2 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-4 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-6 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-7 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-8 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-9 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -19vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1299px){
+  .writing-mode-1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-2 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-4 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-6 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-7 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-8 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif; 
+    font-weight: bold;
+  }
+  .writing-mode-9 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: -2.15vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1580px){
+  .writing-mode-1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-2 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-4 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-6 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-7 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-8 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode-9 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12.10vh;
+    right: 70vw;
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+/* いんすた枠 2022冬　横書き*/
+.writing-mode_1 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_2 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_3 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_4 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_5 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_6 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_7 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_8 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+.writing-mode_9 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  left: 2.5vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+}
+@media screen and (min-width: 520px){
+  .writing-mode_1 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: 24vh;
+    right: -10vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_2 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -3.25vh;
+    right: -10vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_3 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -33.5vh;
+    right: -10vw;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+    }
+  .writing-mode_4 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -63.5vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+  .writing-mode_5 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -93.5vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+  .writing-mode_6 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -123.6vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+  .writing-mode_7 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -153.6vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+  .writing-mode_8 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -183.6vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+  .writing-mode_9 {
+  width: 45vw;
+  height: auto;
+  position: relative;
+  top: -213.5vh;
+  right: -10vw;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  }
+}
+@media screen and (min-width: 960px){
+  .writing-mode_1 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_2 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_3 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_4 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_5 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_6 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_7 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_8 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_9 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -31.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1299px){
+  .writing-mode_1 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_2 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_3 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_4 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_5 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_6 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_7 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_8 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_9 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -14.25vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1580px){
+  .writing-mode_1 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_2 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_3 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_4 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_5 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_6 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_7 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_8 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .writing-mode_9 {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    top: -0.15vh;
+    left: 3vw;
+    font-size: 54px;
+    font-family: serif;
+    font-weight: bold;
+  }
+}
+/*いんすた説明文*/
+
+/*いんすたの写真のサイズ位置*/
+.a-1,.a-2,
+.a-4,.a-5,
+.a-7,.a-8,.a-9 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: -40px;
+}
+.a-3,.a-6 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: -45px;
+}
+/*520
+940
+960
+1299
+1580*/
+@media screen and (min-width: 520px){
+
+  .a-1 {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -2.75vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-2{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -30vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-3{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -60vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-4{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -90vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-5{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -120vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-6{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -150vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-7{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -180vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-8{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -210vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+  .a-9{
+    width: 65.5vw;
+    height: auto;
+    position: relative;
+    left: 50vw;
+    top: -240vh;
+    bottom: 50vh;
+    font-size: 0;
+  }
+}
+@media screen and (min-width: 960px){
+.a-1 {
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-2{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-3{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-4{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-5{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-6{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-7{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-8{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+.a-9{
+  width: 65.5vw;
+  height: auto;
+  position: relative;
+  left: 30vw;
+  top: -79.5vh;
+  bottom: 0vh;
+  font-size: 0;
+}
+}
+/*いんすたの写真のサイズ位置*/
+.picture_item-insta {
+  width: 100vw;
+  height: auto;
+}
+@media screen and (min-width: 520px){
+  .picture_item-insta {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 960px){
+  .picture_item-insta {
+    width: 100vw;
+    height: auto;
+  }
+}
+  /*インスタの画像 */
+.instagram-size {
+  width: 100vw;
+  height: auto;
+}
+@media screen and (min-width: 520px){
+  .instagram-size {
+    width: 45vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 960px){
+  .instagram-size {
+    width: 45vw;
+    height: auto;
+  }
+}
+/* いんすた枠 2022冬　画像配置位置*/
+
+
+/* いんすた枠 2022冬*/
+
+/* いんすた枠 2022冬*/
+
+/* いんすた枠 2022冬*/
+
+/* いんすた枠 2022冬*/
+
+/* フッター*/
+.footer {
+  width: 100vw;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(255, 251, 0);
+}
+@media screen and (min-width: 520px){
+  .footer {
+    width: 100vw;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(255, 251, 0);
+  }
+}
+@media screen and (min-width: 960px){
+  .footer {
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(255, 251, 0);
+  }
+}
+.footer-li {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  top: 35px;
+  padding-top: .5rem;
+  font-size: 16px;
+  font-family: serif;
+}
+.footer-li::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 100vw;
+  height: 1px;
+  background: #000000;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.footer-li:hover::after {
+  transform-origin: left top;
+  transform: scale(1,1);
+}
+@media screen and (min-width: 520px){
+  .footer-li {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    padding-top: .5rem;
+    font-size: 28px;
+    font-family: serif;
+  }
+  .footer-li::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background: #000000;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+  }
+  .footer-li:hover::after {
+    transform-origin: left top;
+    transform: scale(1,1);
+  }
+}
+@media screen and (min-width: 960px){
+  .footer-li {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    padding-top: .5rem;
+    font-size: 34px;
+    font-family: serif;
+  }
+  .footer-li::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background: #000000;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+  }
+  .footer-li:hover::after {
+    transform-origin: left top;
+    transform: scale(1,1);
+  }
+}
+/*フッターCopyright*/
+.footer-copy {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: 45px;
+  font-family: serif;
+}
+@media screen and (min-width: 520px){
+  .footer-copy {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 45px;
+    font-family: serif;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 960px){
+  .footer-copy {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 45px;
+    font-family: serif;
+    font-size: 28px;
+  }
+}
+.p-top-page {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
