@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> portfolio_2022_10 </title>
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\reset.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\slick-theme.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\slick.css">
+<link rel="stylesheet" href="C:\Users\toran\portfolio_2022_10\css\work.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="C:\Users\toran\portfolio_2022_10\js\slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__inner">
+                <h1 class="header__title header-title">
+                    <a href="C:\Users\toran\portfolio_2022_10\index.html">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\portfolio_logo.png" alt="ロゴ">
+                    </a>
+                </h1>
+
+        <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\hobby.html">Hobby</a></li>
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\about.html">About</a></li>
+                <li class="nav-items__item"><a href="C:\Users\toran\portfolio_2022_10\index\work.html">Work</a></li>
+                <li class="nav-items__item"><a href="https://www.instagram.com/"><img src="C:\Users\toran\portfolio_2022_10\img\Instagram.png" alt="inst"></a></li>
+            </ul>
+        </nav>
+
+        <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <section class="hobby">
+                <div class="recently-film">
+                    <ul class="slide-items">
+                        <picture>
+                            <li class="img1">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\sp1.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 67.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 85.png" alt="">
+                            </li>
+                        </picture>
+                        <picture>
+                            <li class="img2">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 66.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 81.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 81.png" alt=""></li>
+                        </picture>
+                        <picture>
+                            <li class="img3">
+                                <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 65.png">
+                                <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\グループ 80.png">
+                                <img src="C:\Users\toran\portfolio_2022_10\img\グループ 80.png" alt=""></li>
+                        </picture>
+                    </ul>
+                </div>
+                    
+                <!--<div class="section_1">
+                    <div class="imgBox inview fadeIn">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\FL000030.jpg" alt="">
+                        <img src="C:\Users\toran\portfolio_2022_10\img\FL000029.jpg" alt="">
+                    </div>
+                </div>-->
+                <h2 class="work">Work</h2>
+                    <div class="work_line">
+                        <p class="work_line">2021年4月新卒採用にて、1年4か月間東京都のシステム開発会社でHP作成業務、運用保守、アクセス解析などの業務を行う。 web制作、HTML/CSSコーディング、CMS(Wordpress)、問い合わせ対応</p>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_portfolio.png">
+                            <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_portfolio.png">
+                            <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_portfolio紹介.png" alt="">
+                        </picture>
+                            <div>
+                                <h4>portfolio</h4>
+                                <p class="work_line">環境・言語</p>
+                                <p class="work_line">Windows/HTML5,CSS3/JavaScript/jQuery/GitHub/Adobe XD</p>
+                                <p class="work_line">作成期間</p>
+                                <p class="work_line">１週間程度</p>
+                                <p class="work_line">私のポートフォリオになります。レスポンシブ<br>javascript,jQueryでハンバーガーメニューを<br>導入動きのあるページ作成に挑戦してみました。</p>
+                            </div>
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_portfolio1.png">
+                                    <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_portfolio1.png">
+                                    <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_portfolio_1A.png" alt="">
+                                </picture>
+                                <h4>医療法人社団　眼科</h4>
+                                <p class="work_line">期間:1年4か月</p>
+                                <p class="work_line">環境・言語 </p>
+                                <p class="work_line">Windows/HTML,CSS/Wordpress</p>
+                                <p class="work_line">CMS(Wordpress)でのページ更新業務、<br>月次請求書の作成、クライアント様からの<br>お問い合わせ業務を担当させていただきました。</p>
+                            </div>
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_portfolio2.png">
+                                    <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_portfolio2.png">
+                                    <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_portfolio_2.png" alt="">
+                                </picture>
+                                <h4>文部科学省</h4>
+                                <p class="work_line">期間:1年4か月</p>
+                                <p class="work_line">環境・言語</p>
+                                <p class="work_line">Windows/HTML,CSS/FileZilla/ApacheLogViewer/</p>
+                                <p class="work_line">HTML,CSSを使用したWeb制作、<br>月次アクセス解析、問い合わせ対応、<br>月次請求書の送付を担当させていただきました。</p>
+                            </div>
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_portfolio3.png">
+                                    <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_portfolio3.png">
+                                    <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_portfolio_3.png" alt="">
+                                </picture>
+                                <h4>厚生労働省</h4>
+                                <p class="work_line">期間:1年4か月</p>
+                                <p class="work_line">環境・言語</p>
+                                <p class="work_line">Windows/HTML,CSS/Wordpress/MySQL</p>
+                                <p class="work_line">CMS(Wordpress)システムサイトのHPのファイル<br>差し替え業務、月次アクセス解析、<br>年二回サイト内データ一括更新、<br>問い合わせ業務を担当させていただきました。</p>
+                            </div>
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_portfolio4.png">
+                                    <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_portfolio4.png">
+                                    <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_portfolio_4.png" alt="">
+                                </picture>
+                                <h4>内閣府</h4>
+                                <p class="work_line">期間:1年4か月</p>
+                                <p class="work_line">環境・言語</p>
+                                <p class="work_line"> Windows/HTML,CSS/AdobeAcrobat</p>
+                                <p class="work_line">HTML,CSS、AdobeAcrobatを使用した<br>サイトのHPの更新ファイル差し替え業務<br>月次請求書の作成送付を担当させていただきました。</p>
+                            </div>
+                    </div>
+                    <h3 class="skill">Skill</h3>
+                    <div class="skill_line">
+                        <div>
+                            <p class="skill_line">コーディング</p>
+                            <p class="skill_line">HTML,CSS,JavaScript,jQueryを現在も独学で<br>コーディングの学習に加えて、<br>AdobeXDの学習をしております。<br>
+                            また、学生時代からの趣味である写真、動画に関するツールAdobePremiumPro、illustrator、Photoshop、AfterEffectsの学習をしています。<br>
+                            社会人としてWebエンジニアデザイナーとしての<br>
+                            経験は短く至らぬ点もありますが、これまでの自走の経験を活かし早期貢献ができると考えております。</p>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer-div">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\about.html">About</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\work.html">Work</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="C:\Users\toran\portfolio_2022_10\index\hobby.html">Hobby</a>
+                        </li>
+                        <p class="footer-copy"><small class="last">&copy; 2022 portfolio</small></p>
+                    </ul>
+                </nav>
+                <p class="p-top-page">
+                    <a href="C:\Users\toran\portfolio_2022_10\index.html">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="C:\Users\toran\portfolio_2022_10\img\tb\tb_page-top.png">
+                            <source media="(min-width: 900px)" srcset="C:\Users\toran\portfolio_2022_10\img\pc\pc_page-top.png">
+                            <img src="C:\Users\toran\portfolio_2022_10\img\sp\sp_page-top.png" alt="">
+                        </picture>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="C:\Users\toran\portfolio_2022_10\js\main.js"></script>
+</body>
+
+</html>
